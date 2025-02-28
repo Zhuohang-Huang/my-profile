@@ -1,0 +1,115 @@
+/* Global Styles: CSS Basics, Fonts & Colors */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container: Used to center and constrain content width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Banner Section: Creating a Banner with a Background Image and Overlay */
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-family: 'Lora', serif;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* Button Styles: Simple CSS Components */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Profile Section: Designing Your Profile with Div Structure and Modifiers */
+.profile-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Cards Section: Making Cards with Flexbox and Creating a Card Grid */
+.cards-section {
+  padding: 60px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33.333% - 20px); /* Three cards per row with gaps */
+  text-align: center;
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin-top: 15px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+}
